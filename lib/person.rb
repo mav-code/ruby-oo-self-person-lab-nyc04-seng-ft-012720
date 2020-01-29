@@ -64,24 +64,21 @@ class Person
     def take_bath
         self.hygiene=(@hygiene + 4)
 
-        end
         return "♪ Rub-a-dub just relaxing in the tub ♫" 
     end 
 
     def work_out
         self.hygiene=(@hygiene -3)
 
-        end
 
         self.happiness=(@happiness +2)
 
-        end 
         return "♪ another one bites the dust ♫"
     end 
     def call_friend(friend)
         self.happiness=(@happiness +3)
 
-        end 
+
     friend.happiness = friend.happiness + 3
     if friend.happiness > 10
         friend.happiness = 10
@@ -93,7 +90,6 @@ class Person
         if topic == "politics"
             self.happiness = (@happiness - 2)
 
-            end 
             friend.happiness = friend.happiness - 2
             if friend.happiness < 0
                 friend.happiness = 0
@@ -101,8 +97,7 @@ class Person
             return 'blah blah partisan blah lobbyist'
         elsif topic == "weather"
             self.happiness = (@happiness + 1)
-
-            end 
+ 
             friend.happiness = friend.happiness + 1
             if friend.happiness > 10
                 friend.happiness = 10
